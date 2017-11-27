@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Image Gallery</title>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+    <link href="css/jgallery.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.pic').hover
+            (function () {
+                var geturl = $(this).attr("href");
+                $('.mainImage').attr("src",geturl);
+
+            },
+                (function () {
+
+                }))
+            });
+
+
+    </script>
+
+</head>
+
+<body>
+<h1>Image Gallery</h1>
+<div id="gallery">
+ <ul>
+   <li>
+     <a class="pic" href="images/photo1.jpg"  title="Golden Gate Bridge">
+         <img id="pic1" src="images/photo1thumb.jpg" width="100" height="75"  alt="Golden Gate Bridge">
+     </a>
+   </li>
+   <li>
+     <a class="pic" href="images/photo2.jpg" title="Rocky Coastline">
+         <img id="pic2" src="images/photo2thumb.jpg" width="100" height="75" alt="Rocky Coastline">
+     </a>  
+   </li>
+   <li>
+     <a class="pic" href="images/photo3.jpg" title="Clouds on the Coast">
+         <img id="pic3" src="images/photo3thumb.jpg" width="100" height="75" alt="Clouds on the Coast">
+     </a>
+   </li>
+   <li>
+     <a class="pic" href="images/photo4.jpg" title="Waterfall Near Big Sur">
+         <img id="pic4" src="images/photo4thumb.jpg" width="100" height="75" alt="Waterfall Near Big Sur">
+     </a>
+   </li>
+   <li>
+     <a class="pic" href="images/photo5.jpg" title="Waves Crashing on the Coast">
+         <img id="pic5" src="images/photo5thumb.jpg" width="100" height="75" alt="Waves Crashing on the Coast">
+     </a>
+  </li>
+  <li>
+    <a class="pic" href="images/photo6.jpg" title="Sunset on the Coast">
+        <img id="pic6" src="images/photo6thumb.jpg" width="100" height="75" alt="Sunset on the Coast">
+    </a>
+  </li>
+ </ul>
+ 
+ <figure >
+  <img class="mainImage" src="images/photo1.jpg" width="400" height="300" alt="Golden Gate Bridge">
+  <figcaption>Golden Gate Bridge</figcaption>
+ </figure>
+</div>
+
+</body>
+</html>
+
+

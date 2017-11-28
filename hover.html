@@ -14,7 +14,9 @@
             $('.pic').hover
             (function () {
                 var geturl = $(this).attr("href");
+		    var myTitle = $(this).attr("title");
                 $('.mainImage').attr("src",geturl);
+		    $('figcaption').text(myTitle);
 
             },
                 (function () {
